@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MyScrollView : UIView
-@property (nonatomic) CGSize *contentSize;
+@property (nonatomic) CGSize contentSize;
 @property (nonatomic) UIPanGestureRecognizer *panGesture;
 - (void)handlePanGesture:(UIPanGestureRecognizer*)sender;
 @end

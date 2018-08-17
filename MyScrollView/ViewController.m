@@ -25,7 +25,7 @@
     [super viewDidLoad];
 
     // grayView
-    UIView *grayView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    UIView *grayView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 2000)];
     grayView.backgroundColor = UIColor.grayColor;
     [self.view addSubview: grayView];
     self.grayView = grayView;
@@ -59,9 +59,9 @@
     [self.grayView addGestureRecognizer:panGesture];
 }
 
-
-- (void)viewDidAppear:(BOOL)animated {
-    [self.view setFrame:CGRectMake(0, -100, self.view.frame.size.width, self.view.frame.size.height)];
-}
+//
+//- (void)viewDidAppear:(BOOL)animated {
+//    [self.view setFrame:CGRectMake(0, -100, self.view.frame.size.width, self.view.frame.size.height)];
+//}
 
 @end

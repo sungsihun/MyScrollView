@@ -11,14 +11,12 @@
 @implementation MyScrollView
 
 - (void)handlePanGesture:(UIPanGestureRecognizer*)sender {
-    NSLog(@"testttt");
     
     CGPoint translationInView = [sender translationInView:sender.view];
     CGPoint oldCenter = sender.view.center;
-    CGPoint newCenter = CGPointMake(oldCenter.x + translationInView.x, oldCenter.y + translationInView.y);
+    CGPoint newCenter = CGPointMake(oldCenter.x, oldCenter.y + translationInView.y);
     sender.view.center = newCenter;
     [sender setTranslation:CGPointZero inView:sender.view];
-    
 
 }
 
